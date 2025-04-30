@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #c40000; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Contenedor principal del login */
+.login-container {
+    background-color: rgba(0, 0, 0, 0.6); /* fondo oscuro semitransparente */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 16px;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    padding: 2rem;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    z-index: 1;
+    position: relative;
+}
+
+/* Títulos */
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #dddddd;
+}
+
+/* Botones */
+.selector-botones {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.selector-botones button {
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+form button {
+    margin-top: 1rem;
+    padding: 0.7rem;
+    width: 100%;
+    background-color: #c40000;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Carros */
+.carro-izquierdo,
+.carro-derecho {
+    position: absolute;
+    width: 200px;
+    z-index: 0;
+    opacity: 0.8;
+}
+
+.carro-izquierdo {
+    top: 10px;
+    left: 10px;
+}
+
+.carro-derecho {
+    bottom: 10px;
+    right: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .carro-izquierdo,
+    .carro-derecho {
+        width: 260px; /* aún más grandes en tablets */
+    }
+
+    .login-container {
+        padding: 1.5rem;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .carro-izquierdo,
+    .carro-derecho {
+        width: 220px; /* aún más grandes en móviles */
+    }
+
+    .selector-botones {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
