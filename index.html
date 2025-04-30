@@ -5,19 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formula 1</title>
     <link rel="stylesheet" href="./src/css/login.css">
+    <script src="./src/js/main.js" type="module"></script> <!-- Asegúrate que apunta a login.js -->
 </head>
 <body>
     <img src="./src/storage/img/login/carroIzquierdo.png" alt="Carro Izquierdo" class="carro-izquierdo">
-    
+
     <main class="login-container">
         <h1>Formula 1</h1>
         <h2>Iniciar sesión</h2>
-
         <div class="selector-botones">
-            <button onclick="mostrarFormulario('usuario')">Usuario</button>
-            <button onclick="mostrarFormulario('admin')">Admin</button>
+            <button id="btnUsuario">Usuario</button>
+            <button id="btnAdmin">Admin</button>
         </div>
-
         <form id="formulario" style="display: none;">
             <input id="inputNombre" type="text" placeholder="Nombre" required>
             <input id="inputContrasena" type="password" placeholder="Contraseña" required>
@@ -26,42 +25,5 @@
     </main>
 
     <img src="./src/storage/img/login/carroDerecho.png" alt="Carro Derecho" class="carro-derecho">
-
-    <script>
-        let tipoUsuarioSeleccionado = null;
-
-        function mostrarFormulario(tipo) {
-            tipoUsuarioSeleccionado = tipo;
-            const formulario = document.getElementById('formulario');
-            const inputNombre = document.getElementById('inputNombre');
-            
-            if (tipo === 'usuario') {
-                inputNombre.placeholder = 'Nombre del Usuario';
-            } else if (tipo === 'admin') {
-                inputNombre.placeholder = 'Nombre del Administrador';
-            }
-
-            formulario.style.display = 'block';
-        }
-
-        document.getElementById('formulario').addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            const nombre = document.getElementById('inputNombre').value.trim();
-            const contrasena = document.getElementById('inputContrasena').value.trim();
-
-            if (
-                (tipoUsuarioSeleccionado === 'usuario' && nombre === 'sofia' && contrasena === 'sofia2025') ||
-                (tipoUsuarioSeleccionado === 'admin' && nombre === 'Adrian' && contrasena === 'Adrian 2025')
-            ) {
-                localStorage.setItem('loggedIn', 'true');
-                localStorage.setItem('tipoUsuario', tipoUsuarioSeleccionado);
-                localStorage.setItem('nombreUsuario', nombre);
-                window.location.href = 'index.html';
-            } else {
-                alert('Nombre o contraseña incorrectos.');
-            }
-        });
-    </script>
 </body>
 </html>
