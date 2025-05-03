@@ -11,7 +11,7 @@ export const circuitos = [
         { temporada: 2022, piloto: 2 },
         { temporada: 2023, piloto: 1 }
     ],
-    imagen: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Monte_Carlo_Formula_1_track_map.svg"
+    imagen: "https://lebalap.academy/wp-content/uploads/2021/02/esquema-circuito-de-monaco.png"
     },
     {
     nombre: "Silverstone",
@@ -25,7 +25,7 @@ export const circuitos = [
         { temporada: 2022, piloto: 5 },
         { temporada: 2023, piloto: 1 }
     ],
-    imagen: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Silverstone_Circuit_2020_layout.png"
+    imagen: "https://media.formula1.com/image/upload/f_auto,c_limit,w_960,q_auto/f_auto/q_auto/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Great_Britain_Circuit"
     },
     {
     nombre: "Circuito de Spa-Francorchamps",
@@ -39,7 +39,7 @@ export const circuitos = [
         { temporada: 2022, piloto: 1 },
         { temporada: 2023, piloto: 1 }
     ],
-    imagen: "https://upload.wikimedia.org/wikipedia/commons/1/1e/Circuit_Spa_2018.png"
+    imagen: "https://lebalap.academy/wp-content/uploads/2021/02/image-5.png"
     },
     {
     nombre: "Circuito de Monza",
@@ -53,7 +53,7 @@ export const circuitos = [
         { temporada: 2022, piloto: 1 },
         { temporada: 2023, piloto: 1 }
     ],
-    imagen: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Monza_track_map.svg"
+    imagen: "https://images.daznservices.com/di/library/DAZN_News/eb/98/monza-gp-italia-gran-premio-de-italia-formula-1-f1_6ig2wzyt5ppl1i7uyv8q0dxpg.jpg?t=314989067"
     },
     {
     nombre: "Interlagos",
@@ -67,7 +67,7 @@ export const circuitos = [
         { temporada: 2022, piloto: 1 },
         { temporada: 2023, piloto: 1 }
     ],
-    imagen: "https://upload.wikimedia.org/wikipedia/commons/2/23/Aut%C3%B3dromo_Jos%C3%A9_Carlos_Pace_%28Interlagos%29.svg"
+    imagen: "https://lebalap.academy/wp-content/uploads/2021/02/image-8.png"
     },
     {
     nombre: "Circuito de Yas Marina",
@@ -81,7 +81,7 @@ export const circuitos = [
         { temporada: 2022, piloto: 1 },
         { temporada: 2023, piloto: 3 }
     ],
-    imagen: "https://upload.wikimedia.org/wikipedia/commons/0/0a/Yas_Marina_Circuit_2021_layout.svg"
+    imagen: "https://lebalap.academy/wp-content/uploads/2021/02/image-1-4.png"
     },
     {
     nombre: "Circuito de Suzuka",
@@ -95,7 +95,7 @@ export const circuitos = [
         { temporada: 2022, piloto: 1 },
         { temporada: 2023, piloto: 1 }
     ],
-    imagen: "https://upload.wikimedia.org/wikipedia/commons/e/eb/Suzuka_circuit_map--2005.svg"
+    imagen: "https://images.daznservices.com/di/library/DAZN_News/8c/b9/suzuka-f1_nd5l87nqmsbrzbrq5j9j3obw.jpg?t=-1548675717"
     }
 ];
 
