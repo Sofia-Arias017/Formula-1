@@ -8,7 +8,7 @@ export const pilotos = [
     { id: 7, nombre: "Lando Norris", equipo: "McLaren", rol: "Líder", foto:"https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2025Drivers/norris" },
     { id: 8, nombre: "Oscar Piastri", equipo: "McLaren", rol: "Escudero", foto:"https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2025Drivers/piastri" },
     { id: 9, nombre: "Fernando Alonso", equipo: "Aston Martin", rol: "Líder", foto:"https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2025Drivers/alonso" },
-    { id: 10, nombre: "Lance Stroll", equipo: "Aston Martin", rol: "Escudero", foto:"https://static.wikia.nocookie.net/f1wikia/images/d/de/LanceStroll2024.jpg/revision/latest?cb=20240408143236" },
+    { id: 10, nombre: "Lance Stroll", equipo: "Aston Martin", rol: "Escudero", foto:"https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2025Drivers/stroll" },
     { id: 11, nombre: "Esteban Ocon", equipo: "Alpine", rol: "Líder", foto:"https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2025Drivers/ocon"},
     { id: 12, nombre: "Pierre Gasly", equipo: "Alpine", rol: "Escudero", foto:"https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2025Drivers/gasly" },
     { id: 13, nombre: "Valtteri Bottas", equipo: "Alfa Romeo", rol: "Líder", foto:"https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2024Drivers/bottas" },
@@ -18,5 +18,5 @@ export const pilotos = [
     { id: 17, nombre: "Yuki Tsunoda", equipo: "AlphaTauri", rol: "Líder", foto:"https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2025Drivers/tsunoda" },
     { id: 18, nombre: "Daniel Ricciardo", equipo: "AlphaTauri", rol: "Escudero", foto:"https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiJmMW1hbmFnZXIvMjAyMy9kcml2ZXJzL2hlYWRzaG90cy9mMS9yaWMucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo1MDB9fX0=" },
     { id: 19, nombre: "Alexander Albon", equipo: "Williams", rol: "Líder", foto:"https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2025Drivers/albon" },
-    { id: 20, nombre: "Logan Sargeant", equipo: "Williams", rol: "Escudero", foto:"https://static.wikia.nocookie.net/f1wikia/images/c/c0/LoganSargeant2024.jpg/revision/latest?cb=20240408143214" }
+    { id: 20, nombre: "Logan Sargeant", equipo: "Williams", rol: "Escudero", foto:"https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiJmMW1hbmFnZXIvMjAyNC9kcml2ZXJzL2hlYWRzaG90cy9mMS9zYXIucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo1MDB9fX0=" }
 ];
