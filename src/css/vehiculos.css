@@ -102,6 +102,15 @@ body {
     opacity: 0.8;
 }
 
+.carousel-nav input[type="search"] {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+    min-width: 300px; /* Modificado de 220px a 300px */
+    margin-left: 20px;
+}
+
 /* --------- Responsive Design --------- */
 @media (max-width: 768px) {
     .top-bar {
@@ -148,6 +157,11 @@ body {
 
     .carousel-nav button {
         font-size: 1rem;
+    }
+
+    .carousel-nav input[type="search"] {
+        min-width: 90%;
+        margin-left: 0;
     }
 }
 
