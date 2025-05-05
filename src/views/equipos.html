@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Equipos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/equipos.css">
+    <script src="../js/equipos.js" type="module"></script>
+    <script src="../components/equipos-card.js" type="module"></script>
+</head>
+<body>
+
+    <header>
+        <div class="top-bar">
+            <div class="logos">
+                <img src="../storage/img/paginas/logoFia.png" alt="FIA" class="icon large-icon">
+                <img src="../storage/img/paginas/LogoF1.png" alt="F1" class="icon large-icon">
+                <img src="../storage/img/paginas/f1TV.logo.png" alt="F1TV" class="icon large-icon">
+            </div>
+            <div class="user-section">
+                <button class="user-btn">
+                    <img src="../storage/img/paginas/usuario.png" alt="Usuario" class="user-icon">
+                    <span>Sofía</span>
+                </button>
+                <button class="suscribirse-btn">Suscribirse</button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="carousel-nav">
+        <button onclick="window.location.href='pilotos.html'">Pilotos</button>
+        <button onclick="window.location.href='equipos.html'">Equipos</button>
+        <button onclick="window.location.href='vehiculos.html'">Vehículos</button>
+        <button onclick="window.location.href='circuitos.html'">Circuitos</button>
+    </nav>
+
+    <section>
+        <div id="contenedor-equipos" class="contenedor-equipos"></div>
+    </section>
+
+</body>
+</html>
