@@ -177,3 +177,58 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* --------- Carrusel con buscador y botones --------- */
+.carousel-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+}
+
+.nav-search input[type="search"] {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    min-width: 220px;
+}
+
+/* Responsive para carrusel con buscador */
+@media (max-width: 768px) {
+    .carousel-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .nav-buttons {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-search {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-search input[type="search"] {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
