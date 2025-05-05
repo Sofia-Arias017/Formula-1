@@ -51,8 +51,8 @@ loginForm.addEventListener('submit', (event) => {
 
   // Redirigir según el rol
   if (usuario.rol === 'admin') {
-    window.location.href = './views/circuitos.html';
+    window.location.href = '../src/views/circuitos.html';
   } else {
-    window.location.href = './views/pilotos.html';
+    window.location.href = '../src/views/pilotos.html';
   }
 });
