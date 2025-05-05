@@ -1,0 +1,161 @@
+/* --------- Reset general --------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* --------- Barra superior --------- */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 1.5rem;
+    background-color: white;
+    border-bottom: 3px solid red;
+    flex-wrap: wrap;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon.large-icon {
+    height: 50px;
+    width: auto;
+}
+
+.logos img[alt="F1"] {
+    height: 65px;
+}
+
+.logos img[alt="F1TV"] {
+    height: 85px;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0rem;
+}
+
+.user-btn,
+.suscribirse-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+}
+
+.user-btn {
+    background-color: red;
+    color: white;
+}
+
+.user-icon {
+    height: 18px;
+    margin-right: 6px;
+}
+
+.suscribirse-btn {
+    background-color: black;
+    color: white;
+}
+
+/* --------- Navegación de pestañas --------- */
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-color: red;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+}
+
+.carousel-nav button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.carousel-nav button:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+/* --------- Responsive Design --------- */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .user-section {
+        align-self: flex-end;
+        margin-top: 1rem;
+    }
+
+    .carousel-nav {
+        gap: 20px;
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-bar {
+        padding: 0.6rem 1rem;
+    }
+
+    .logos {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .user-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .carousel-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 1rem;
+    }
+
+    .carousel-nav button {
+        font-size: 1rem;
+    }
+}
+
+/* --------- Contenedor de Tarjetas de Vehículos --------- */
+.contenedor-vehiculos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+}
