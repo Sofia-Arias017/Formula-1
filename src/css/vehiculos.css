@@ -159,3 +159,55 @@ body {
     justify-content: center;
     padding: 1rem;
 }
+
+/* --------- Tarjetas individuales de vehículos --------- */
+.vehiculo-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    max-width: 320px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.2s ease-in-out;
+}
+
+.vehiculo-card:hover {
+    transform: translateY(-5px);
+}
+
+.vehiculo-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.vehiculo-card h3 {
+    font-size: 1.25rem;
+    margin: 0 0 0.75rem;
+    color: #333;
+}
+
+.vehiculo-card p {
+    margin: 0.4rem 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.vehiculo-card p strong {
+    color: #222;
+}
+
+/* --------- Responsive para tarjetas --------- */
+@media (max-width: 768px) {
+    .contenedor-vehiculos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vehiculo-card {
+        max-width: 90%;
+    }
+}
