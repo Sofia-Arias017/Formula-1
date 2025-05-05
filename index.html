@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formula 1</title>
     <link rel="stylesheet" href="./src/css/login.css">
-    <script src="./src/js/main.js" type="module"></script> 
+    <script src="./src/js/login.js" type="module"></script> 
 </head>
 <body>
     <img src="./src/storage/img/login/carroIzquierdo.png" alt="Carro Izquierdo" class="carro-izquierdo">
@@ -17,9 +17,9 @@
             <button id="btnUsuario">Usuario</button>
             <button id="btnAdmin">Admin</button>
         </div>
-        <form id="formulario" style="display: none;">
-            <input id="inputNombre" type="text" placeholder="Nombre" required>
-            <input id="inputContrasena" type="password" placeholder="Contraseña" required>
+        <form id="login-form" style="display: none;">
+            <input id="username" type="text" placeholder="Nombre" required>
+            <input id="password" type="password" placeholder="Contraseña" required>
             <button type="submit">Entrar</button>
         </form>
     </main>
