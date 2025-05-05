@@ -11,7 +11,7 @@ export const equipos = [
     pais: "Alemania",
     motor: "Mercedes",
     pilotos: [3, 4],
-    imagen: "https://static.wikia.nocookie.net/f1wikia/images/3/3c/Mercedes_AMG_Petronas_GP.png/revision/latest?cb=20211216104607"
+    imagen: "https://cdn-7.motorsport.com/images/mgl/0RrzmDo0/s8/mercedes-f1-logo-1.jpg"
     },
     {
     nombre: "Ferrari",
@@ -46,7 +46,7 @@ export const equipos = [
     pais: "Italia",
     motor: "Honda",
     pilotos: [13, 14],
-    imagen: "https://static.wikia.nocookie.net/f1-formula-1/images/8/8f/AlphaTauri.png/revision/latest?cb=20230119010046"
+    imagen: "https://www.unavozcontodos.mx/wp-content/uploads/2022/02/Scuderia-AlphaTauri-1536x864.png"
 },
 {
     nombre: "Haas F1 Team",

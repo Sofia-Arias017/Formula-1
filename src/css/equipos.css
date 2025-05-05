@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.2rem 1.5rem; /* reducido el padding vertical aún más */
+    padding: 0.2rem 1.5rem;
     background-color: white;
     border-bottom: 3px solid red;
     flex-wrap: wrap;
@@ -34,7 +34,6 @@ body {
     width: auto;
 }
 
-/* Tamaño específico para logos de F1 */
 .logos img[alt="F1"] {
     height: 65px;
 }
@@ -48,7 +47,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 0rem; /* reducido el espacio superior */
+    margin-top: 0rem;
 }
 
 .user-btn,
@@ -65,7 +64,6 @@ body {
     border: none;
 }
 
-/* Botón de usuario */
 .user-btn {
     background-color: red;
     color: white;
@@ -76,7 +74,6 @@ body {
     margin-right: 6px;
 }
 
-/* Botón de suscripción */
 .suscribirse-btn {
     background-color: black;
     color: white;
@@ -108,8 +105,6 @@ body {
 }
 
 /* --------- Responsive Design --------- */
-
-/* Tablets */
 @media (max-width: 768px) {
     .top-bar {
         flex-direction: column;
@@ -128,7 +123,6 @@ body {
     }
 }
 
-/* Móviles */
 @media (max-width: 480px) {
     .top-bar {
         padding: 0.6rem 1rem;
@@ -161,9 +155,25 @@ body {
 
 /* --------- Contenedor de Tarjetas de Equipos --------- */
 .contenedor-equipos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas fijas */
+    gap: 2.5rem;
+    justify-items: center;
+    align-items: start;
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --------- Grid responsivo opcional --------- */
+@media (max-width: 1024px) {
+    .contenedor-equipos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .contenedor-equipos {
+        grid-template-columns: 1fr;
+    }
 }

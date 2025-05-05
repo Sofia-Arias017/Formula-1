@@ -1,4 +1,4 @@
-import { pilotos } from '../data/pilotosData.js'; // Asegúrate que esta ruta es correcta
+import { pilotos } from '../data/pilotosData.js'; 
 import '../components/piloto-card.js'; // Esto registra el custom element
 
 const contenedor = document.getElementById('contenedor-pilotos');
