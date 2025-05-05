@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../css/equipos.css">
     <script src="../js/equipos.js" type="module"></script>
     <script src="../components/equipo-card.js" type="module"></script>
+    <script src="../js/carruselNav.js" type="module"></script>
+
 </head>
 <body>
 
@@ -28,11 +30,12 @@
     </header>
 
     <nav class="carousel-nav">
-        <button onclick="window.location.href='pilotos.html'">Pilotos</button>
-        <button onclick="window.location.href='equipos.html'">Equipos</button>
-        <button onclick="window.location.href='vehiculos.html'">Vehículos</button>
-        <button onclick="window.location.href='circuitos.html'">Circuitos</button>
+        <button data-page="pilotos.html">Pilotos</button>
+        <button data-page="equipos.html">Equipos</button>
+        <button data-page="vehiculos.html">Vehículos</button>
+        <button data-page="circuitos.html">Circuitos</button>
     </nav>
+    
 
     <section>
         <div id="contenedor-equipos" class="contenedor-equipos"></div>
